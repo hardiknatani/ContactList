@@ -69,6 +69,6 @@ app.get("/delete-contact",(req,res)=>{
     });
 
 
-app.listen(port,()=>{
+app.listen(process.env.PORT || port,()=>{
 console.log("Server is up and running on port: ",port)
 })
