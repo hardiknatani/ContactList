@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-
+const uri = process.env.MONGODB_URI;
 //connect to database
-mongoose.connect('mongodb://localhost/contactlist_db',{
+mongoose.connect(uri,{
     useUnifiedTopology: true,
     useNewUrlParser: true
   })
